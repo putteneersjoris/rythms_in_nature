@@ -8112,8 +8112,7 @@ L.control.zoom = function (options) {
 
 L.Control.Attribution = L.Control.extend({
 	options: {
-		position: 'bottomright',
-		prefix: '<a href="http://fieldstationstudio.org" title="add title">fieldstation studio</a>'
+		position: 'bottomright'
 	},
 
 	initialize: function (options) {
@@ -8868,7 +8867,7 @@ L.PosAnimation = L.DomUtil.TRANSITION ? L.PosAnimation : L.PosAnimation.extend({
 
 L.Map.mergeOptions({
 	zoomAnimation: true,
-	zoomAnimationThreshold: 4
+	zoomAnimationThreshold: 2
 });
 
 if (L.DomUtil.TRANSITION) {

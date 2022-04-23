@@ -5,9 +5,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {width: 100%;height: 100%;}
 
-body {width: 100%; height: 100%; background: #fff; font-family: "CustomFont", "Letter Gothic Std","Lucida Sans Unicode", monospace;}
+body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomFont", "Letter Gothic Std","Lucida Sans Unicode", monospace;}
 
-#map {width:100%;height: 100%;background: #fff;}
+#map {width:100%;height: 100%;background: rgb(0, 0, 0);}
+
+
 
 #layerz {
 	position: absolute;
@@ -16,13 +18,14 @@ body {width: 100%; height: 100%; background: #fff; font-family: "CustomFont", "L
 	width: 26px;
 	height: 26px;
 	border: 1px solid #ff0000;
-	outline: 2px solid #fff;
+	/* outline: 2px solid #fff; */
 	background: url('img/Z000.png') no-repeat center center #fff;
 	cursor: pointer;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-o-user-select: none;
+	
 	}
 
 /* LEAFLET STYLES */
@@ -111,7 +114,7 @@ body {width: 100%; height: 100%; background: #fff; font-family: "CustomFont", "L
 
 /* general toolbar styles */
 .leaflet-bar {border: 1px solid #ff0000;
-	outline: 2px solid #fff;
+	/* outline: 2px solid #fff; */
 }
 .leaflet-bar a, .leaflet-bar a:hover {
 	display: block;
