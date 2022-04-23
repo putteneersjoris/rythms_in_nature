@@ -8112,7 +8112,8 @@ L.control.zoom = function (options) {
 
 L.Control.Attribution = L.Control.extend({
 	options: {
-		position: 'bottomright'
+		position: 'bottomright',
+		prefix: '<a title="add title" style="font-size: 20px; letter-spacing: normal;">quad core alt coin</a>'
 	},
 
 	initialize: function (options) {

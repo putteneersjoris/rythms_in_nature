@@ -15,7 +15,7 @@
 	<body>
 	    <div id="map">&nbsp;</div>
 	
-	    <div id="layerz" title="LAYERZ [SPACE]"></div>
+	    <div id="layerz" title="LAYERZ [SPACE]" ></div>
 	    
 	    <script type="text/javascript">
 	        
@@ -25,7 +25,7 @@
 	            var layer  = L.tileLayer(mapLink, {id: 'layer', noWrap: true}), 
 					layer2  = L.tileLayer(mapLink, {id: 'layer2', noWrap: true}); 
 	
-	            var map = L.map('map', {center: [-48.8, -1.4], zoom: 1, minZoom: 1, maxZoom: 1}).addLayer(layer);
+	            var map = L.map('map', {center: [-48.8, -1.4], zoom: 1, minZoom: 1, maxZoom: 5}).addLayer(layer);
 	
 	            var baseLayers = {"layer": layer, "layer2": layer2,};
 	            
@@ -119,5 +119,8 @@
 	
 
 	    </script>
+		
+
+
 	</body>
 </html>

@@ -5,19 +5,34 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {width: 100%;height: 100%;}
 
-body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomFont", "Letter Gothic Std","Lucida Sans Unicode", monospace;}
+body {width: 100%; height: 100%; background: rgb(255, 255, 255); font-family: "CustomFont", "Letter Gothic Std","Lucida Sans Unicode", monospace;}
 
-#map {width:100%;height: 100%;background: rgb(0, 0, 0);}
+#map {width:100%;height: 100%;background: rgb(255, 255, 255);
+image-rendering: pixelated;}
 
+.tree{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgb(255, 255, 255);
+	image-rendering: pixelated;
+}
 
+.foo{
+	margin: 50px auto;
+	padding: 50px;
 
+}
 #layerz {
 	position: absolute;
 	top: 108px;
 	left: 25px;
 	width: 26px;
 	height: 26px;
-	border: 1px solid #ff0000;
+	border: 1px solid #000000;
 	/* outline: 2px solid #fff; */
 	background: url('img/Z000.png') no-repeat center center #fff;
 	cursor: pointer;
@@ -95,7 +110,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	background: #ddd;
 	}
 .leaflet-container a {
-	color: #ff0000;	
+	color: #000000;	
 	text-decoration: none;
 	}
 .leaflet-container a:hover{
@@ -113,14 +128,14 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 .leaflet-container {font: 15px/1.5 "CustomFont", "Letter Gothic Std", monospace;}
 
 /* general toolbar styles */
-.leaflet-bar {border: 1px solid #ff0000;
+.leaflet-bar {border: 1px solid #000000;
 	/* outline: 2px solid #fff; */
 }
 .leaflet-bar a, .leaflet-bar a:hover {
 	display: block;
 	width: 26px;
-	border-bottom: 1px solid #ff0000;
-	color: #ff0000;
+	border-bottom: 1px solid #000000;
+	color: #000000;
 	text-align: center;
 	text-decoration: none;
 	line-height: 22px;
@@ -132,7 +147,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	background-repeat: no-repeat;
 	}
 .leaflet-bar a:hover {
-	color: #ff0000;
+	color: #000000;
 	}
 .leaflet-bar a:first-child {
 	}
@@ -140,7 +155,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	border-bottom: none;
 	}
 .leaflet-bar a.leaflet-disabled {
-	color: #ff0000;
+	color: #000000;
 	cursor: default;
 	}
 .leaflet-touch .leaflet-bar a {
@@ -175,7 +190,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 
 /* layers control */
 .leaflet-control-layers {
-	border: 1px solid #ff0000;
+	border: 1px solid #000000;
 	background: #fff;
 	}
 .leaflet-control-layers-toggle {
@@ -201,7 +216,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	}
 .leaflet-control-layers-expanded {
 	padding: 6px 10px 6px 6px;
-	color: #ff0000;
+	color: #000000;
 	}
 .leaflet-control-layers-selector {
 	position: relative;
@@ -214,7 +229,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 .leaflet-control-layers-separator {
 	margin: 5px -10px 5px -6px;
 	height: 0;
-	border-top: 1px solid #ff0000;
+	border-top: 1px solid #000000;
 	}
 	 
 /* attribution and scale controls */
@@ -288,7 +303,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	padding: 1px;
 	width: auto;
 	text-align: left;
-	border: 1px solid #ff0000;
+	border: 1px solid #000000;
 	outline: 1px solid #fff;
 	position: relative;
 	z-index: 9990;
@@ -301,7 +316,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	padding:15px;
 	}
 .leaflet-popup-content a{}	
-.leaflet-popup-content em {color:#ff0000;}
+.leaflet-popup-content em {color:#000000;}
 .leaflet-popup-content p {
 	margin: 18px 0;
 	}
@@ -319,7 +334,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	padding: 1px;
 	width: 17px;
 	height: 17px;
-	border: 1px solid #ff0000;
+	border: 1px solid #000000;
 	outline: 1px solid #fff;
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -339,7 +354,7 @@ body {width: 100%; height: 100%; background: rgb(0, 0, 0); font-family: "CustomF
 	display: none;
 	}
 .leaflet-container a.leaflet-popup-close-button:hover {
-	color: #ff0000;
+	color: #000000;
 	}
 .leaflet-popup-scrolled {
 	overflow: auto;
